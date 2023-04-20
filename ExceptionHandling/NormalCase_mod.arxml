@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR>
+  <Container UUID="198ae269-8478-44bd-92b5-14982c4ff68b">
+    <SHORT_NAME>ContainerA</SHORT_NAME>
+    <LONG_NAME>BB</LONG_NAME>
+  </Container>
+  <Container UUID="198ae269-8478-44bd-92b5-14982c4ff68a">
+    <SHORT_NAME>ContainerB</SHORT_NAME>
+    <LONG_NAME>AA</LONG_NAME>
+  </Container>
+  <Container UUID="198ae269-8478-44bd-92b5-14982c4ff68c">
+    <SHORT_NAME>ContainerC</SHORT_NAME>
+    <LONG_NAME>CC</LONG_NAME>
+  </Container>
+</AUTOSAR>
