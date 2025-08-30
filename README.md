@@ -1,10 +1,51 @@
-# Exception-Handling-Assignment
-This program reads ARXML files containing a list of containers that have ID, Short Name and Long Name by passing the file path and reordering the list alphapetically by the Short Name then writes new file containing the reordered list with modified path
-The Exception Handling folder contains 
-(4) classes in src folder: 
-  1.Container Class for creating containers with ID, Short Name, Long Name. / 
-  2.EmptyAutosarFileException for declaring an exception in case of empty file. / 
-  3.NotVaildAutosarFileException for declaring an exception in case of non arxml file extenstion. / 
-  4.Exception Handling Class that has readFile method that takes the file path as a parameter also handling the mentioned exceptions by printing the stack trace and      create a list of containers that have the values passed in the file , sorting it in the main,  and creating new modified file (mod.armxl) by writeFile method that      takes the sorted list & the file path as parameters also thows ParserConfigurationException & TransformerException.
-(3) files in src folder: 1.EmptyFileCase.arxml that tests the EmptyAutosarFileException / 2.WrongFormatCase.txt that tests the NotVaildAutosarFileException /  3.NormalCase.arxml that produce the modified file if the input is correct.
-batch file in dist folder you can run the program in the batch file the program will ask for the path of the .arxml file you want to provide, you can copy the path of one of the 3 files mentioned above and pasting it in the program make sure the path is right and is not between " ".
+# 📘 Exception Handling Project
+
+## 📌 Overview
+This program reads `.arxml` files containing a list of containers with:
+- **ID**
+- **Short Name**
+- **Long Name**
+
+It takes the file path as input, reorders the list **alphabetically by Short Name**, and writes a new file with the reordered list (at a modified path).
+
+---
+
+## ⚡ Exception Handling
+The `src` folder contains 4 classes inside the **Exception Handling** package:
+
+1. **Container**  
+   - Creates containers with ID, Short Name, and Long Name.  
+
+2. **EmptyAutosarFileException**  
+   - Thrown when the input file is empty.  
+
+3. **NotValidAutosarFileException**  
+   - Thrown when the input file does not have an `.arxml` extension.  
+
+4. **ExceptionHandling**  
+   - `readFile(path)` → Reads the file, handles the above exceptions, and creates a list of containers.  
+   - Sorting is performed in `main`.  
+   - `writeFile(sortedList, path)` → Writes the sorted list to a new modified file (`mod.arxml`).  
+   - May throw `ParserConfigurationException` & `TransformerException`.  
+
+---
+
+## 📂 Test Files (in `src` folder)
+1. **EmptyFileCase.arxml** → Tests the `EmptyAutosarFileException`.  
+2. **WrongFormatCase.txt** → Tests the `NotValidAutosarFileException`.  
+3. **NormalCase.arxml** → Produces a modified file if the input is valid.  
+
+---
+
+## ▶️ Running the Program
+A batch file is provided in the `dist` folder.
+
+1. Run the batch file.  
+2. The program will ask for the path of the `.arxml` file.  
+3. Copy the path of one of the 3 test files and paste it in the program.  
+
+⚠️ **Note:**  
+- Ensure the path is correct.  
+- Do **not** enclose the path in quotes (`"`).  
+
+---
